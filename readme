@@ -1,0 +1,2 @@
+npm i --save-dev typescript nodemon @types/pg @types/express dotenv
+npm i pg express
