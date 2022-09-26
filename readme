@@ -1,2 +1,1 @@
-npm i --save-dev typescript nodemon @types/pg @types/express dotenv
-npm i pg express
+.env is not included in .gitignore on purpose for setup simplicity
