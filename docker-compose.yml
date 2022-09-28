@@ -18,4 +18,13 @@ services:
       - POSTGRES_PASSWORD=postgres
     ports:
       - '5432:5432'
-
+  react-ui:
+    build:
+      context: ./src
+    ports:
+      - "3000:3000"
+    container_name: react-ui
+    stdin_open: true
+    volumes:
+      - ./my-app:/usr/src/app/my-app
+      - /usr/src/app/my-app/node_modules
