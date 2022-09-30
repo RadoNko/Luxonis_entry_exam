@@ -85,7 +85,7 @@ async function testConnection () {
 }
 
 connectToDB().then(async () => {
-    const url = 'https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&page=1&per_page=10'
+    const url = 'https://www.sreality.cz/api/en/v2/estates?category_main_cb=1&category_type_cb=1&page=1&per_page=500'
     const data = await extractData(url);
     savePSQL(data);
 });
